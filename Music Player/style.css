@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: roboto;
+}
+
+body,html{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(35, 35, 35);
+    color: white;
+}
+
+h1{
+    text-align: center;
+    position: relative;
+    top: 80px;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+
+h1:hover{
+    text-shadow:0 0 37px white;
+    font-size: 40px;
+}
+
+.music-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.music-player{
+    width: 17rem;
+    height: 24rem;
+    border: 2px solid rgb(33, 33, 33);
+    background-color: rgb(33, 33, 33);
+    border-radius: 1rem;
+    box-shadow: 0 0 37px 4px rgba(0, 0, 0, 0.717);
+    text-align: center;
+    color: white;
+    transition: all .4s ease-in-out;
+}
+
+.music-player:hover{
+    scale: 1.2;
+}
+
+.music-player .song-img{
+    width: 12rem;
+    object-fit: contain;
+    border-radius: .5rem;
+    margin-top: 1.5rem;
+    margin-bottom: .7rem;
+}
+
+.music-player .song-info .song-name{
+    font-size: .85rem;
+    margin: 0 2.8rem;
+}
+
+.music-player .song-info .song-name{
+    margin-bottom: .3rem;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.music-player .song-info .singer-name{
+    color: rgb(159, 157, 157);
+    font-size: .85rem;
+}
+
+#audio-bar{
+    margin-top: 8px;
+    width: 268px;
+    height: 34px;
+    display: none;
+}
+
+.slider{
+    appearance: none;
+    -webkit-appearance: none;
+    width: 70%;
+    height: 5px;
+    border-radius: 1rem;
+    background-color: gray;
+}
+
+.slider::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 18px;
+    height: 18px;
+    background-color: gray;
+    border: 2px solid rgb(31, 31, 31);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.control-icons{
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.control-icons img{
+    cursor: pointer;
+}

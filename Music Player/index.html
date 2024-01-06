@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Music Player</title>
+  </head>
+  <body>
+    <h1>MUSIC PLAYER</h1>
+    <div class="music-container">
+      <div class="music-player">
+        <img class="song-img" src="songs/9-45 song.jpg" alt="" />
+        <div class="song-info">
+          <p class="song-name">9:45</p>
+          <p class="singer-name">Prabh Singh,Jay Trak, Rooh Sandhu</p>
+        </div>
+        <div class="prograss-bar">
+          <audio controls id="audio-bar">
+            <source src="songs/9 45-(PagalWorld).mp3" />
+          </audio>
+
+          <input type="range" class="slider" id="prograss" />
+        </div>
+
+        <div class="controls">
+          <div class="control-icons">
+            <img src="images/previous-svgrepo-com.svg" />
+            <img
+              onclick="playPause()"
+              id="play_btn"
+              class="btn"
+              src="images/play-circle-svgrepo-com.svg"
+            />
+            <img src="images/next-svgrepo-com.svg" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
